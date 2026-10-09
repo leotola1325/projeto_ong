@@ -6,6 +6,7 @@
 @import url("projetos.css");
 @import url("voluntario.css");
 
+/* aqui importados todos css para somente linkar esse css mais ja contendo todos aquivos css juntos  */
 
 .hero {
     background: radial-gradient(circle at 85% 20%, var(--mint) 0 28%, transparent 29%), linear-gradient(#fff, #f3fbf9);
