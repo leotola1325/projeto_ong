@@ -17,13 +17,27 @@
     <header class="topo">
         <div class="wrap"><a class="logo" href="index.html"><span class="pata">🐾</span> Vida Animal<small>ONG de
                     resgate</small></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">☰ <span class="sr-only">Abrir menu</span></button>
             <nav aria-label="Principal">
-                <ul>
+                <ul id="menu-principal">
                     <li><a href="index.html">Início</a></li>
-                    <li><a href="projetos.html">Projetos</a></li>
-                    <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+                    <li class="has-dropdown">
+                        <button class="dropdown-toggle" type="button" aria-expanded="false">Projetos <span aria-hidden="true">⌄</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="projetos.html">Todos os projetos</a></li>
+                            <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+                            <li><a href="projetos.html#doar">Como doar</a></li>
+                        </ul>
+                    </li>
                     <li><a href="cadastro.html">Cadastro</a></li>
-                    <li><a href="login.html">Entrar</a></li>
+                    <li class="has-dropdown">
+                        <button class="dropdown-toggle" type="button" aria-expanded="false">Entrar <span aria-hidden="true">⌄</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html?tipo=admin">Administrador</a></li>
+                            <li><a href="login.html?tipo=voluntario">Voluntário</a></li>
+                            <li><a href="login.html?tipo=doador">Doador</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><a class="btn" href="projetos.html#doar">Doe agora</a>
         </div>
@@ -85,7 +99,7 @@
         </section>
         <section class="ajuda">
             <div class="wrap">
-                <h2>Como podemos ajudar</h2>
+                <h2 id="ajuda_como">Como podemos ajudar</h2>
                 <ul class="icones">
                     <li><span>🔍</span>Animais perdidos</li>
                     <li><span>💉</span>Vacinação</li>
@@ -131,7 +145,7 @@
                 <figure class="img-vazia" data-nome="imagens/animal-resgate.jpg"><img src="img/resgate_animal.jpg"
                         alt="" width="1200" height="900" loading="lazy" onerror="this.remove()"></figure>
                 <div>
-                    <h2>Fique por dentro dos resgates</h2>
+                    <h2 id="fique_resgaste" >Fique por dentro dos resgates</h2>
                     <p>Receba histórias e relatórios de transparência.</p><a class="btn"
                         href="cadastro.html">Cadastre-se</a>
                 </div>
@@ -159,7 +173,7 @@
     <footer class="rodape">
         <div class="wrap">
             <a href="index.html">
-                <img src="img/Logo_Vida_Animal_com_Pata_e_Coração-removebg-preview.png" alt="Logo da Vida Animal"
+                <img src="admin/icon_pata.png" alt="Logo da Vida Animal"
                     class="logo-footer">
             </a>
             <address>
@@ -183,7 +197,9 @@
         </div>
         <p class="copy">© 2026 Vida Animal. projeto ficticio faculdade.</p>
     </footer>
+    <script src="js/ui.js"></script>
     <script src="js/inicio.js"></script>
+    <script src="js/navbar-scroll.js"></script>
 </body>
 
 </html>

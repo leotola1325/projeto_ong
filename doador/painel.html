@@ -17,31 +17,45 @@
     <header class="topo">
         <div class="wrap"><a class="logo" href="../index.html"><span class="pata">🐾</span> Vida Animal<small>ONG de
                     resgate</small></a>
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">☰ <span class="sr-only">Abrir menu</span></button>
             <nav aria-label="Principal">
-                <ul>
+                <ul id="menu-principal">
                     <li><a href="../index.html">Início</a></li>
-                    <li><a href="../projetos.html">Projetos</a></li>
-                    <li><a href="../projetos.html#voluntariado">Voluntariado</a></li>
+                    <li class="has-dropdown">
+                        <button class="dropdown-toggle" type="button" aria-expanded="false">Projetos <span aria-hidden="true">⌄</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="../projetos.html">Todos os projetos</a></li>
+                            <li><a href="../projetos.html#voluntariado">Voluntariado</a></li>
+                            <li><a href="../projetos.html#doar">Como doar</a></li>
+                        </ul>
+                    </li>
                     <li><a href="../cadastro.html">Cadastro</a></li>
-                    <li><a href="../login.html" id="sair">Sair</a></li>
+                    <li class="has-dropdown">
+                        <button class="dropdown-toggle" type="button" aria-expanded="false">Entrar <span aria-hidden="true">⌄</span></button>
+                        <ul class="dropdown-menu">
+                            <li><a href="../login.html?tipo=admin">Administrador</a></li>
+                            <li><a href="../login.html?tipo=voluntario">Voluntário</a></li>
+                            <li><a href="../login.html?tipo=doador">Doador</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav><a class="btn" href="../projetos.html#doar">Doe agora</a>
         </div>
     </header>
     <main id="principal">
         <section class="wrap">
-            <h1>Painel do doador</h1>
+            <h1 class="fonte_padraoh">Painel do doador</h1>
             <p id="ola"></p>
-            <h2>Fazer uma doação</h2>
-            <form id="fd"><label for="vl">Valor (R$)</label><input id="vl" type="number" min="5" required><button
+            <h2 class="fonte_padraoh">Fazer uma doação</h2>
+            <form id="fd"><label for="vl" class="fonte_padrao">Valor (R$)</label><input id="vl" type="number" min="5" required><button
                     class="btn" type="submit">Doar</button></form>
-            <h2>Aplicação dos recursos</h2>
+            <h2 class="fonte_padraoh">Aplicação dos recursos</h2>
             <ul>
                 <li>60% alimentação e abrigo</li>
                 <li>30% atendimento veterinário</li>
                 <li>10% resgates e transporte</li>
             </ul>
-            <h2>Minhas doações</h2>
+            <h2 class="fonte_padraoh">Minhas doações</h2>
             <ul>
                 <li>R$ 50 – 05/08/2026</li>
                 <li>R$ 100 – 02/09/2026</li>
@@ -51,7 +65,7 @@
         <footer class="rodape">
         <div class="wrap">
             <a href="../index.html">
-                <img src="../img/Logo_Vida_Animal_com_Pata_e_Coração-removebg-preview.png" alt="Logo da Vida Animal"
+                <img src="../admin/icon_pata.png" alt="Logo da Vida Animal"
                     class="logo-footer">
             </a>
             <address>
@@ -75,7 +89,9 @@
         </div>
         <p class="copy">© 2026 Vida Animal. projeto ficticio faculdade.</p>
     </footer>
+    <script src="../js/ui.js"></script>
     <script src="../js/doador.js"></script>
+    <script src="../js/navbar-scroll.js"></script>
 </body>
 
 </html>
