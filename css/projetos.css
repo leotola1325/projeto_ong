@@ -24,3 +24,11 @@
 .doar .barra {
     margin: 12px 0
 }
+@font-face {
+    font-family: 'fonte_monimerserif';
+    src: url('fontes/MonimerSerif_PERSONAL_USE_ONLY.otf') format('truetype')
+}
+#projetos_h{
+    font-family: 'fonte_monimerserif', sans-serif;
+    font-size: 60px;
+}

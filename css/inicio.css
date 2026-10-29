@@ -1,12 +1,14 @@
-@import url("admin.css");
 @import url("base.css");
+@import url("admin.css");
 @import url("cadastro.css");
 @import url("doador.css");
 @import url("login.css");
 @import url("projetos.css");
 @import url("voluntario.css");
-
-/* aqui importados todos css para somente linkar esse css mais ja contendo todos aquivos css juntos  */
+@import url("navigation.css");
+@import url("components.css");
+@import url("forms.css");
+@import url("responsive.css");
 
 .hero {
     background: radial-gradient(circle at 85% 20%, var(--mint) 0 28%, transparent 29%), linear-gradient(#fff, #f3fbf9);
@@ -29,10 +31,28 @@
     border-radius: 20px;
     margin-bottom: 12px
 }
+@font-face {
+    font-family: 'inicio';
+    src: url('fontes/Matcha\ World.ttf') format('truetype')
+}
+#sobre{
+    font-family: 'inicio', sans-serif;
+}
+#ajuda_como{
+    font-family: 'inicio', sans-serif;
+}
+#proj{
+    font-family: 'inicio', sans-serif;
+}
+#fique_resgaste{
+    font-family: 'inicio', sans-serif;
+    color:rgba(255, 255, 255, 0.918);
+}
 
 .hero h1 {
     font-size: clamp(2.2rem, 5.5vw, 3.6rem);
-    margin-bottom: 14px
+    margin-bottom: 14px;
+    font-family: 'inicio', sans-serif;
 }
 
 .hero em {

@@ -32,3 +32,11 @@ li {
     font: 700 2rem Georgia, serif;
     color: var(--coral)
 }
+@font-face {
+    font-family: 'padraoh';
+    src: url(fontes/MonimerSerif_PERSONAL_USE_ONLY.otf);
+}
+.fonte_padraoh{
+    font-family: 'padraoh', sans-serif;
+    font-size: 40px;
+}

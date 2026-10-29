@@ -9,6 +9,14 @@
     border-radius: 16px;
     margin-top: 0x
 }
+@font-face {
+    font-family:'matcha';
+    src: url(fontes/Matcha\ World.ttf);
+}
+#dados_h{
+    font-family: 'matcha', sans-serif;
+    font-size: 25px;
+}
 
 form {
     background: #fff;

@@ -32,3 +32,19 @@ li {
     font: 700 2rem Georgia, serif;
     color: var(--coral)
 }
+@font-face {
+    font-family: 'painel';
+    src: url(fontes/Matcha\ World.ttf);
+}
+#painel_h1{
+    font-family: 'painel', sans-serif;
+    font-size: 40px;
+}
+@font-face {
+    font-family: 'padrao';
+    src: url(fontes/MonimerSerif_PERSONAL_USE_ONLY.otf);
+}
+.fonte_padrao{
+    font-family: 'padrao', sans-serif;
+    font-size: 20px;
+}

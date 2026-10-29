@@ -55,3 +55,15 @@ td {
 th {
     background: var(--mint)
 }
+@font-face {
+    font-family: 'painel';
+    src: url(fontes/MonimerSerif_PERSONAL_USE_ONLY.otf);
+}
+#h_painel{
+    font-family: 'painel', sans-serif;
+    font-size: 50px;
+}
+#h_contas{
+    font-family: 'painel', sans-serif;
+    font-size: 35px;
+}
