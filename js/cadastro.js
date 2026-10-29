@@ -18,12 +18,14 @@ document.getElementById('form').onsubmit = function (e) {
   e.preventDefault();
   var msg = document.getElementById('msg');
   if (this.checkValidity()) {                                  //verifica se os campos são validos pelo que esta sendo exigencido do html :)
-    msg.className = 'ok';
+    msg.className = 'form-feedback ok';
     msg.textContent = 'Cadastro enviado! Em breve entraremos em contato.';
+    if (typeof mostrarToast === 'function') mostrarToast(msg.textContent, 'sucesso');
     this.reset();
   } else {
     this.reportValidity();
-    msg.className = 'erro';
+    msg.className = 'form-feedback erro';
     msg.textContent = 'Corrija os campos destacados.';
+    if (typeof mostrarToast === 'function') mostrarToast(msg.textContent, 'erro');
   }
 };
